@@ -20,6 +20,6 @@ public class StatePatternDemo {
         vendingMachine.insertMoney(5);
         vendingMachine.dispense();
         vendingMachine.ejectMoney();
-        
+
     }
 }
