@@ -67,6 +67,9 @@ public class SplitWiseService {
         }
     }
 
+    public Map<String, Transaction> getTransactions() {
+        return transactions;
+    }
 
     private void updateBalances(Expense expense){
         for(Split split: expense.getSplits()){

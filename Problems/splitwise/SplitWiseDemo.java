@@ -48,6 +48,15 @@ public class SplitWiseDemo {
 
         // settle balances
         instance.settleBalance(user1.getId(), user3.getId());
+//        instance.settleBalance(user1.getId(), user2.getId());
+
+        // print Transactions
+        System.out.println("Transactions: ");
+        for(Transaction transaction: instance.getTransactions().values()){
+            System.out.println(transaction.getSender().getName() + " send " + transaction.getReceiver().getName() + " : Rs " + transaction.getAmount());
+        }
+        System.out.println();
+        System.out.println();
 
 
         // print user balances
@@ -59,13 +68,7 @@ public class SplitWiseDemo {
         }
         System.out.println();
         System.out.println();
-        
 
 
     }
-
-
-
-
-
 }
