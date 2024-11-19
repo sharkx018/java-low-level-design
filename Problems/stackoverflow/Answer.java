@@ -96,4 +96,5 @@ public class Answer implements Commentable, Votable {
     public boolean isAccepted() {
         return isAccepted;
     }
+    
 }
